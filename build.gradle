@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:4.+'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
     }
 }
 
@@ -39,3 +39,5 @@ minecraft {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 }
+
+sourceSets { main { output.resourcesDir = output.classesDir } }
